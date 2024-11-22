@@ -1,0 +1,42 @@
+{
+  "id": "cv4bf1mqxmm0008d7cpg",
+  "hub": "ibm-q",
+  "group": "open",
+  "project": "main",
+  "backend": "ibm_kyoto",
+  "state": {
+    "status": "Completed"
+  },
+  "status": "Completed",
+  "params": {
+    "pubs": [
+      [
+        "OPENQASM 2.0; include \"qelib1.inc\"; gate rzx(param0) q0,q1 { h q1; cx q0,q1; rz(param0) q1; cx q0,q1; h q1; } gate ecr q0,q1 { rzx(pi/4) q0,q1; x q0; rzx(-pi/4) q0,q1; } qreg q[127]; creg c[5]; x q[43]; sx q[44]; rz(-pi) q[45]; sx q[45]; rz(-pi) q[45]; rz(-pi/2) q[64]; sx q[64]; x q[65]; rz(-pi) q[66]; sx q[66]; rz(-pi) q[66]; x q[73]; sx q[85]; rz(pi/2) q[85]; measure q[43] -> c[0]; sx q[43]; rz(-pi/2) q[43]; measure q[65] -> c[1]; rz(-pi/2) q[65]; ecr q[65],q[66]; rz(-pi) q[65]; x q[65]; rz(-pi) q[66]; sx q[66]; rz(-pi) q[66]; measure q[73] -> c[2]; rz(-pi/2) q[73]; ecr q[73],q[66]; x q[73]; sx q[66]; ecr q[65],q[66]; rz(-pi/2) q[65]; sx q[65]; sx q[66]; rz(-pi/2) q[66]; ecr q[65],q[66]; rz(pi/2) q[65]; sx q[65]; rz(-pi) q[66]; sx q[66]; rz(pi/2) q[66]; ecr q[65],q[66]; sx q[65]; rz(-pi/2) q[65]; ecr q[64],q[65]; rz(pi/2) q[64]; sx q[64]; rz(-pi) q[65]; sx q[65]; rz(pi/2) q[65]; ecr q[64],q[65]; rz(-pi/2) q[64]; sx q[64]; sx q[65]; rz(-pi/2) q[65]; ecr q[64],q[65]; rz(-pi) q[64]; sx q[64]; ecr q[54],q[64]; rz(pi/2) q[54]; sx q[54]; rz(-pi) q[64]; sx q[64]; rz(pi/2) q[64]; ecr q[54],q[64]; rz(-pi/2) q[54]; sx q[54]; sx q[64]; rz(-pi/2) q[64]; ecr q[54],q[64]; rz(pi/2) q[54]; sx q[54]; ecr q[54],q[45]; x q[54]; sx q[45]; ecr q[44],q[45]; rz(-pi/2) q[44]; sx q[44]; sx q[45]; rz(-pi/2) q[45]; ecr q[44],q[45]; rz(pi/2) q[44]; sx q[44]; rz(-pi) q[45]; sx q[45]; rz(pi/2) q[45]; ecr q[44],q[45]; rz(-pi/2) q[44]; sx q[44]; rz(-pi) q[44]; ecr q[44],q[43]; x q[43]; x q[44]; rz(-pi/2) q[44]; ecr q[44],q[43]; rz(-pi) q[43]; sx q[43]; rz(pi/2) q[43]; rz(pi/2) q[44]; sx q[44]; ecr q[44],q[43]; sx q[43]; rz(-pi/2) q[43]; rz(-pi/2) q[44]; sx q[44]; ecr q[44],q[43]; rz(pi/2) q[43]; sx q[43]; rz(pi/2) q[43]; rz(pi/2) q[44]; sx q[44]; rz(pi/2) q[44]; rz(-pi/2) q[54]; ecr q[54],q[45]; rz(3*pi/4) q[45]; sx q[45]; rz(-pi) q[45]; ecr q[44],q[45]; x q[44]; rz(-pi/2) q[44]; rz(-3*pi/4) q[45]; sx q[45]; rz(-pi) q[45]; x q[54]; rz(-pi/2) q[54]; ecr q[54],q[45]; rz(3*pi/4) q[45]; sx q[45]; rz(-pi) q[45]; ecr q[44],q[45]; x q[44]; rz(-pi/2) q[44]; x q[45]; rz(-pi/4) q[45]; rz(-3*pi/4) q[54]; sx q[54]; rz(-pi/2) q[54]; ecr q[54],q[45]; rz(-pi) q[45]; sx q[45]; rz(pi/2) q[45]; rz(pi/2) q[54]; sx q[54]; ecr q[54],q[45]; sx q[45]; rz(-pi/2) q[45]; rz(-pi/2) q[54]; sx q[54]; ecr q[54],q[45]; rz(pi/2) q[45]; sx q[45]; rz(pi/2) q[45]; ecr q[44],q[45]; x q[44]; rz(-pi/4) q[44]; rz(3*pi/4) q[45]; sx q[45]; rz(-pi) q[45]; ecr q[44],q[45]; x q[44]; rz(pi/2) q[54]; sx q[54]; rz(pi/2) q[54]; rz(pi/2) q[64]; sx q[64]; rz(pi/2) q[64]; ecr q[54],q[64]; x q[54]; rz(-pi/2) q[54]; rz(-3*pi/4) q[64]; sx q[64]; rz(-pi) q[64]; x q[65]; rz(-pi/2) q[65]; rz(pi/2) q[66]; sx q[66]; rz(-pi/2) q[66]; rz(-pi/2) q[73]; ecr q[73],q[85]; sx q[73]; rz(-pi) q[73]; rz(-3*pi/4) q[85]; ecr q[73],q[85]; rz(pi/2) q[73]; sx q[73]; rz(-pi) q[85]; sx q[85]; rz(pi/2) q[85]; ecr q[73],q[85]; rz(-pi/2) q[73]; sx q[73]; sx q[85]; rz(-pi/2) q[85]; ecr q[73],q[85]; x q[73]; ecr q[73],q[66]; sx q[66]; rz(-pi/2) q[73]; sx q[73]; rz(-pi/4) q[73]; sx q[73]; rz(-pi) q[85]; ecr q[73],q[85]; rz(-pi/2) q[73]; sx q[73]; rz(pi/4) q[73]; sx q[73]; ecr q[73],q[66]; x q[66]; rz(pi/2) q[73]; sx q[73]; rz(-pi/4) q[73]; sx q[73]; rz(-pi/2) q[73]; ecr q[73],q[66]; rz(-pi) q[66]; sx q[66]; rz(pi/2) q[66]; rz(pi/2) q[73]; sx q[73]; ecr q[73],q[66]; sx q[66]; rz(-pi/2) q[66]; rz(-pi/2) q[73]; sx q[73]; ecr q[73],q[66]; rz(-pi) q[66]; sx q[66]; ecr q[65],q[66]; rz(pi/2) q[65]; sx q[65]; rz(-pi) q[66]; sx q[66]; rz(pi/2) q[66]; ecr q[65],q[66]; rz(-pi/2) q[65]; sx q[65]; sx q[66]; rz(-pi/2) q[66]; ecr q[65],q[66]; rz(-pi) q[65]; ecr q[64],q[65]; rz(-pi/2) q[64]; sx q[64]; rz(pi/4) q[64]; sx q[64]; ecr q[54],q[64]; rz(-3*pi/4) q[54]; sx q[54]; rz(-3*pi/4) q[64]; sx q[64]; rz(-pi) q[64]; sx q[65]; ecr q[64],q[65]; rz(-pi/2) q[64]; sx q[64]; rz(-pi/4) q[64]; x q[65]; ecr q[64],q[65]; rz(pi/2) q[64]; sx q[64]; rz(-pi) q[65]; sx q[65]; rz(pi/2) q[65]; ecr q[64],q[65]; rz(-pi/2) q[64]; sx q[64]; sx q[65]; rz(-pi/2) q[65]; ecr q[64],q[65]; rz(-pi) q[64]; ecr q[54],q[64]; rz(-pi/2) q[54]; sx q[54]; rz(pi/4) q[54]; sx q[54]; rz(pi/2) q[64]; sx q[64]; rz(-3*pi/4) q[64]; sx q[64]; rz(pi/2) q[64]; ecr q[54],q[64]; rz(pi/2) q[54]; sx q[54]; rz(pi/2) q[54]; rz(-pi/2) q[64]; sx q[64]; rz(pi/2) q[64]; rz(pi/2) q[65]; sx q[65]; rz(pi/2) q[65]; rz(pi/2) q[66]; sx q[66]; rz(pi/2) q[66]; rz(pi/2) q[73]; sx q[73]; rz(pi/2) q[73]; rz(pi/2) q[85]; sx q[85]; rz(pi/4) q[85]; sx q[85]; ecr q[73],q[85]; x q[73]; rz(-pi/4) q[73]; rz(3*pi/4) q[85]; sx q[85]; rz(-pi) q[85]; ecr q[73],q[85]; x q[73]; measure q[43] -> c[3]; measure q[65] -> c[4];",
+        [],
+        1024
+      ]
+    ],
+    "version": 2,
+    "support_qiskit": false
+  },
+  "program": {
+    "id": "sampler"
+  },
+  "created": "2024-08-23T16:23:34.285Z",
+  "ended": "2024-08-23T16:27:32.922Z",
+  "runtime": "",
+  "cost": 600,
+  "tags": [
+    "composer-info:composer:true",
+    "composer-info:code-id:517ba31a619b3f2c5598260073dde2d169fecfd1caa8f62d44a45a534e7949ba",
+    "composer-info:code-version-id:66bcfc58a1bee41ea8baacb4"
+  ],
+  "session_id": null,
+  "estimated_running_time_seconds": 11.580429743230622,
+  "estimated_max_running_time_seconds": 57.902148716153114,
+  "usage": {
+    "seconds": 0
+  },
+  "private": false,
+  "user_id": "66b8d5436e0c117e12688220"
+}
